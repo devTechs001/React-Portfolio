@@ -1,0 +1,154 @@
+/* Header Section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bgColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--textColor);
+}
+
+.header .logo i {
+  margin-right: 0.5rem;
+  color: var(--mainColor);
+}
+
+.header .navbar {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header .navbar a {
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.header .navbar a i {
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.header .navbar a:hover i {
+  color: var(--mainColor);
+}
+
+.header .navbar a.active i {
+  color: var(--mainColor);
+}
+
+.header .navbar a:hover {
+  color: var(--mainColor);
+}
+
+.header .menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--textColor);
+  transition: color 0.3s ease;
+}
+
+.header .menu-icon i {
+  font-size: 2.5rem;
+  color: var(--textColor);
+  transition: all 0.3s ease;
+}
+
+.header .menu-icon:hover i {
+  color: var(--mainColor);
+}
+
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  .header .menu-icon {
+    display: block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bgColor);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .navbar.active {
+    display: flex;
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header .menu-icon i {
+    animation: menuIcon 0.3s ease forwards;
+  }
+}
+
+@keyframes menuIcon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 2rem 2%;
+  }
+
+  .header .navbar {
+    padding: 1rem 2%;
+  }
+
+  .header .navbar a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header .navbar a {
+    font-size: 1.6rem;
+  }
+}
+
+/* Adjust spacing for mobile */
+@media screen and (max-width: 768px) {
+  .header .navbar a i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+}
+
