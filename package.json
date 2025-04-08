@@ -2,21 +2,15 @@
   "name": "react-portfolio-v",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://devTechs001.github.io/React-Portfolio-v/",
+  "homepage": "https://devTechs001.github.io/React-Portfolio/",
   "scripts": {
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
     "preview": "cd frontend && npm run preview",
     "predeploy": "cd frontend && npm run build",
-    "deploy": "sh deploy.sh"
+    "deploy": "powershell -File deploy.ps1"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
 }
-
-
-
-
-
-

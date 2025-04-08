@@ -80,7 +80,8 @@ const About = () => {
                 </a>
             </div>
             <div className="about-image">
-                <img src="/React-Portfolio-v/assets/images/profile-pic.jpg" alt="Daniel Mukula" />
+                <img src="/assets/images/profile-pic.jpg" alt="Daniel Mukula" />
+                <div className="circle-spin"></div>
             </div>
         </section>
     );
