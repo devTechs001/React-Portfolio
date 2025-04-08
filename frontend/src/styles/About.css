@@ -1,12 +1,10 @@
 
 /* About Section */
 .about {
-  margin-top: 3rem;
-  margin-bottom:3rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 9%;
+  padding: 8rem 9% 3rem; /* Increased top padding to account for header */
   background: var(--bgColor);
   gap: 4rem;
   position: relative;
@@ -233,7 +231,7 @@
   .about {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 10rem 4% 2rem;
+    padding: 8rem 4% 2rem; /* Adjusted padding */
   }
 
   .about-content h1 {
@@ -266,6 +264,10 @@
 }
 
 @media (max-width: 480px) {
+  .about {
+    padding: 7rem 4% 2rem; /* Further adjusted for smaller screens */
+  }
+
   .about-content h1 {
     font-size: 3.2rem;
   }
