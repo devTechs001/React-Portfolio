@@ -75,12 +75,12 @@ const About = () => {
                         <i className="fab fa-whatsapp"></i>
                     </a>
                 </div>
-                <a href="/assets/cv/CV2.pdf" className="btn" download>
+                <a href={`${import.meta.env.BASE_URL}assets/cv/CV2.pdf`} className="btn" download>
                     <i className="fas fa-download"></i> Download CV
                 </a>
             </div>
             <div className="about-image">
-                <img src="/assets/images/profile-pic.jpg" alt="Daniel Mukula" />
+                <img src={`${import.meta.env.BASE_URL}assets/images/profile-pic.jpg`} alt="Daniel Mukula" />
             </div>
         </section>
     );
